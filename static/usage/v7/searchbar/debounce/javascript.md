@@ -10,7 +10,7 @@
   let results = [...data];
   filterItems(results);
 
-  searchbar.addEventListener('ionChange', handleChange);
+  searchbar.addEventListener('ionInput', handleChange);
 
   function handleChange(event) {
     const query = event.target.value.toLowerCase();
