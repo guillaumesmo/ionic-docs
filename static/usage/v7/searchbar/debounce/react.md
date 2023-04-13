@@ -16,7 +16,7 @@ function Example() {
 
   return (
     <>
-      <IonSearchbar debounce={1000} onIonChange={(ev) => handleChange(ev)}></IonSearchbar>
+      <IonSearchbar debounce={1000} onIonInput={(ev) => handleChange(ev)}></IonSearchbar>
 
       <IonList>
         { results.map(result => (
